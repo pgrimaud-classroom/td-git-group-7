@@ -1,0 +1,11 @@
+<?php
+
+function tax($brut){
+
+  return ($brut < 1000)*$brut*0.1 + ($brut > 1000)*($brut*0.25 - 150);
+
+}
+
+echo tax(1200);
+
+?>
