@@ -1,0 +1,25 @@
+<?php
+
+$numbers = [];
+
+for ($i=0; $i<100; $i++) {
+  $numbers[$i] = rand(10,1000);
+}
+
+$ordered = false;
+while ($ordered = false) {
+  
+  $ordered = true;
+  for ($i=0; $i<99; $i++) {
+    
+    if ($numbers[$i]>$numbers[$i+1]) {
+      $temp = $numbers[$i];
+      $numbers[$i] = $numbers[$i+1];
+      $numbers[$i+1] = $temp;
+      $ordered = false;
+      
+    }
+  }
+}
+
+?>

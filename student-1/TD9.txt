@@ -1,0 +1,16 @@
+<?php
+
+ function tree($n) {
+   
+   $m=2*$n - 1;
+   
+   for ($i=1; $i <= $m; $i++) {
+     
+     echo str_repeat('a', min($i, 2*$n - $i)).'<br>';
+     
+   }
+}
+          
+tree(10);
+          
+?>
