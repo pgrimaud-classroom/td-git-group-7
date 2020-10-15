@@ -1,7 +1,11 @@
 <?php
 
-$brut = rand(500, 5000);
+function tax($brut){
 
-echo $brut < 1000 ? $brut*0.1 : $brut*0.25 - 150;
+  return $brut < 1000 ? $brut*0.1 : $brut*0.25 - 150;
+
+}
+
+echo tax(1250);
 
 ?>
