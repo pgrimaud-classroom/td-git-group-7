@@ -1,0 +1,20 @@
+<?php
+
+$x = rand(1,5);
+
+switch ($x) {
+ 
+  case 1:
+    echo "Hello";
+    break;
+    
+  case 2:
+    echo "Salut";
+    break;
+    
+  default:
+    echo "Yo";
+    
+}
+
+?>

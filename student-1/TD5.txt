@@ -1,0 +1,7 @@
+<?php
+
+$age = 30;
+
+echo $age < 23 ? "oui" : "non";
+
+?>

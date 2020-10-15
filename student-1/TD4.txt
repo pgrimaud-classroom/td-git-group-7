@@ -1,0 +1,22 @@
+<?php
+
+$note = rand(0,20);
+
+if ($note <= 10) {
+  echo "Bof";
+
+} elseif ($note <= 12) {
+  echo "Passable";
+
+} elseif ($note <= 14) {
+  echo "Assez-bien";
+
+} elseif ($note <= 16) {
+  echo "Bien";
+
+} else {
+  echo "Très bien";
+  
+}
+
+?>

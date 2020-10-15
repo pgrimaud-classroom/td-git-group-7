@@ -1,0 +1,7 @@
+<?php
+
+$brut = rand(500, 5000);
+
+echo $brut < 1000 ? $brut*0.1 : $brut*0.25 - 150;
+
+?>
